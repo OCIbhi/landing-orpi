@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="shell">
- <header class="topbar"><div class="brand" id="brandName">OPPORTUNITÉ OCI · CASTRIES</div><div class="actions"><a class="btn secondary small" href="#leadForm" style="text-decoration:none">Contacter l’agence</a><button class="btn secondary small" id="toggleAdmin">⚙ Personnaliser / Tester</button></div></header>
+ <header class="topbar"><div class="brand" id="brandName">OPPORTUNITÉ OCI · CASTRIES</div><div class="actions"><a class="btn secondary small" href="#leadForm" style="text-decoration:none">Contacter l’agence</a><button class="btn secondary small" id="toggleAdmin" hidden aria-hidden="true" tabindex="-1">⚙ Personnaliser / Tester</button></div></header>
  <main class="layout">
   <section class="hero"><img id="heroImage" alt="Photo du bien"><span class="badge" id="badge">Exclusivité Avant-Première</span></section>
   <section class="columns">
@@ -93,7 +93,7 @@ const DEFAULT_AGENCY_EMAIL='aurelien.bajard@orpi.com';
 const DEFAULT_TEST_MODE=true;
 const CONFIG_KEYS={project:'Nom du projet',primary:'Couleur principale (#hex)',badge:'Badge',sector:'Secteur géographique',title:'Titre principal',rent:'Loyer (nombre)',rentLabel:'Libellé du loyer',photo:'URL photo',description:'Description',advisor:'Nom conseiller / agence',phone:'Téléphone',email:'E-mail',agencyAddress:'Adresse agence'};
 const SLOTS=['10:00–11:30','11:00–12:30','14:00–15:30','15:30–17:00','16:00–17:30'];
-let config=load('oci_config',DEFAULTS), leads=load('oci_leads',[]), mode='rappel', testMode=load('oci_test_mode',DEFAULT_TEST_MODE);
+let config=load('oci_config',DEFAULTS), leads=load('oci_leads',[]), mode='rappel', testMode=false;
 function load(k,f){try{return JSON.parse(localStorage.getItem(k))??structuredClone(f)}catch{return structuredClone(f)}}
 function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
 function applyConfig(){document.documentElement.style.setProperty('--primary',/^#[0-9a-f]{6}$/i.test(config.primary)?config.primary:DEFAULTS.primary);
