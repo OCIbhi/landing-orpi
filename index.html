@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="fr" style="--primary: #D6001C;"><head>
+<html lang="fr">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#D6001C">
-<title>Location Accession à Castries</title>
+<title>Opportunité OCI Castries</title>
 <style>
 :root{--primary:#D6001C;--ink:#18212f;--muted:#697586;--bg:#f4f5f7;--card:#fff;--line:#e5e7eb;--soft:#fff1f2;--shadow:0 22px 65px rgba(20,28,45,.10)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit}
@@ -19,35 +20,27 @@
 </head>
 <body>
 <div class="shell">
- <header class="topbar"><div class="brand" id="brandName">LOCATION ACCESSION À CASTRIES</div><div class="actions"><a class="btn secondary small" href="#leadForm" style="text-decoration:none">Contacter l’agence</a><button class="btn secondary small" id="toggleAdmin">⚙ Personnaliser / Tester</button></div></header>
+ <header class="topbar"><div class="brand" id="brandName">OPPORTUNITÉ OCI · CASTRIES</div><div class="actions"><a class="btn secondary small" href="#leadForm" style="text-decoration:none">Contacter l’agence</a><button class="btn secondary small" id="toggleAdmin" hidden aria-hidden="true" tabindex="-1">⚙ Personnaliser / Tester</button></div></header>
  <main class="layout">
-  <section class="hero"><img id="heroImage" alt="Photo du bien" src="https://v.seloger.com/s/width/860/visuels/1/e/p/a/1epaqq6ndb9k32rgeca8gl6x9cgqkg6y9xs0miiso.jpg"><span class="badge" id="badge">A NE PAS MANQUER !</span></section>
+  <section class="hero"><img id="heroImage" alt="Photo du bien"><span class="badge" id="badge">Exclusivité Avant-Première</span></section>
   <section class="columns">
-   <article class="details"><div class="eyebrow" id="sector">Secteur Castries Parc du Château</div><h1 id="headline">Une opportunité OCI à ne pas manquer</h1>
-    <div class="price"><div class="amount" id="price">850 €</div><div id="priceLabel">Loyer mensuel</div></div>
-    <p class="desc" id="description">L'expertise OCI à votre disposition :
-
-Ne manquez pas l'opportunité de transformer vos loyers en résidence principale. 
-
-PTZ 2026 (Zone B1) - Prêt 1% - financement personnalisé .
-
-Appartement T2 avec terrasse et jardin privatif à partir de 172.000€ (stationnement inclus)
-
-                                            Rencontrons nous pour échanger sur votre projet et valider votre éligibilité !</p>
+   <article class="details"><div class="eyebrow" id="sector">Secteur Castries</div><h1 id="headline">Une opportunité OCI à ne pas manquer</h1>
+    <div class="price"><div class="amount" id="price">840 €</div><div id="priceLabel">Loyer d'appel mensuel</div></div>
+    <p class="desc" id="description"></p>
    </article>
-   <aside class="formbox"><h2>Intéressé par cette opportunité ?</h2><div id="feedback" class="notice ok" role="status" aria-live="polite">Personnalisation enregistrée.</div>
+   <aside class="formbox"><h2>Intéressé par cette opportunité ?</h2><div id="feedback" class="notice hidden" role="status" aria-live="polite"></div>
     <form id="leadForm">
-     <div class="field"><label for="name">Nom et prénom *</label><input id="name" name="name" autocomplete="name" required="" maxlength="120" placeholder="Jean Dupont"></div>
-     <div class="field"><label for="phone">Téléphone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required="" maxlength="30" placeholder="06 12 34 56 78"></div>
-     <div class="field"><label for="email">Adresse e-mail *</label><input id="email" name="email" type="email" autocomplete="email" required="" maxlength="180" placeholder="jean@email.fr"></div>
+     <div class="field"><label for="name">Nom et prénom *</label><input id="name" name="name" autocomplete="name" required maxlength="120" placeholder="Jean Dupont"></div>
+     <div class="field"><label for="phone">Téléphone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="06 12 34 56 78"></div>
+     <div class="field"><label for="email">Adresse e-mail *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="180" placeholder="jean@email.fr"></div>
      <div class="field"><label>Mode de contact *</label><div class="modes"><button type="button" class="mode active" data-mode="rappel">Être rappelé</button><button type="button" class="mode" data-mode="rdv">Prendre RDV</button></div></div>
      <section id="rdvFields" class="hidden">
-      <div class="field"><label for="day">Jour souhaité *</label><select id="day" required=""><option value="2026-11-04">mercredi 4 novembre</option><option value="2026-11-05">jeudi 5 novembre</option><option value="2026-11-06">vendredi 6 novembre</option><option value="2026-11-09">lundi 9 novembre</option><option value="2026-11-10">mardi 10 novembre</option><option value="2026-11-11">mercredi 11 novembre</option><option value="2026-11-12">jeudi 12 novembre</option><option value="2026-11-13">vendredi 13 novembre</option><option value="2026-11-16">lundi 16 novembre</option><option value="2026-11-17">mardi 17 novembre</option></select></div>
-      <div class="field"><label for="slot">Créneau (1h30) *</label><select id="slot" required=""><option value="10:00–11:30">10:00–11:30</option><option value="11:00–12:30">11:00–12:30</option><option value="14:00–15:30">14:00–15:30</option><option value="15:30–17:00">15:30–17:00</option><option value="16:00–17:30">16:00–17:30</option></select></div>
+      <div class="field"><label for="day">Jour souhaité *</label><select id="day" required></select></div>
+      <div class="field"><label for="slot">Créneau (1h30) *</label><select id="slot" required></select></div>
       <div class="field"><label for="place">Lieu du rendez-vous *</label><select id="place"><option value="agence">En agence</option><option value="domicile">À domicile</option></select></div>
       <div class="field hidden" id="addressWrap"><label for="address">Adresse complète *</label><input id="address" maxlength="250" placeholder="Numéro, rue, code postal, ville"></div>
      </section>
-     <label class="check"><input type="checkbox" id="consent" required=""><span>J'accepte que mes informations soient utilisées pour traiter ma demande et être recontacté(e). *</span></label>
+     <label class="check"><input type="checkbox" id="consent" required><span>J'accepte que mes informations soient utilisées pour traiter ma demande et être recontacté(e). *</span></label>
      <div class="field" style="position:absolute;left:-9999px" aria-hidden="true"><label for="website">Ne pas remplir</label><input id="website" tabindex="-1" autocomplete="off"></div>
      <button class="btn" style="width:100%" id="submitBtn" type="submit">Valider ma demande</button>
      <p class="tiny">Les champs marqués * sont obligatoires. Vos données ne sont utilisées que pour le suivi de votre demande.</p>
@@ -56,21 +49,21 @@ Appartement T2 avec terrasse et jardin privatif à partir de 172.000€ (station
   </section>
   <section class="value-strip" aria-label="Votre accompagnement"><div class="value-item"><div class="value-icon">⌂</div><b>Un échange personnalisé</b><span>Présentez votre projet et vos disponibilités. Notre conseiller revient vers vous.</span></div><div class="value-item"><div class="value-icon">◷</div><b>Une visite sur rendez-vous</b><span>Choisissez une demande de rappel ou proposez un créneau de rendez-vous.</span></div><div class="value-item"><div class="value-icon">✓</div><b>Un suivi de votre demande</b><span>Vous recevez un accusé de réception lorsque votre demande est prise en compte.</span></div></section>
  </main>
- <footer class="foot"><strong id="advisor">Aurélien Bajard</strong> · <a id="phoneLink" href="tel:0684107146">06-84-10-71-46</a> · <a id="emailLink" href="mailto:aurelien.bajard@orpi.com">aurelien.bajard@orpi.com</a><div id="agencyAddress">avenue du General de Gaulle 34400 Lunel</div></footer>
- <section class="admin" id="adminPanel">
-  <h2>Personnalisation &amp; espace de test</h2><p class="tiny">Les modifications sont enregistrées dans ce navigateur. Le mode test ne transmet aucune donnée à un service externe.</p>
-  <div class="toolbar"><button class="btn secondary small" id="testMode">Mode test local : désactivé (réel)</button><button class="btn secondary small" id="saveConfig">Enregistrer les réglages</button><button class="btn secondary small" id="resetConfig">Réglages d'origine</button><button class="btn small" id="downloadSite">Télécharger la page personnalisée</button></div>
-  <details open=""><summary>Contenu de la page</summary><div class="admin-grid" id="configFields"><div class="field"><label>Nom du projet</label><input id="cfg_project"></div><div class="field"><label>Couleur principale (#hex)</label><input id="cfg_primary"></div><div class="field"><label>Badge</label><input id="cfg_badge"></div><div class="field"><label>Secteur géographique</label><input id="cfg_sector"></div><div class="field"><label>Titre principal</label><input id="cfg_title"></div><div class="field"><label>Loyer (nombre)</label><input id="cfg_rent"></div><div class="field"><label>Libellé du loyer</label><input id="cfg_rentLabel"></div><div class="field wide"><label>URL photo</label><input id="cfg_photo"></div><div class="field wide"><label>Description</label><textarea id="cfg_description" rows="3"></textarea></div><div class="field"><label>Nom conseiller / agence</label><input id="cfg_advisor"></div><div class="field"><label>Téléphone</label><input id="cfg_phone"></div><div class="field"><label>E-mail</label><input id="cfg_email"></div><div class="field"><label>Adresse agence</label><input id="cfg_agencyAddress"></div></div></details>
-  <details><summary>Connexion et automatisations</summary><div class="admin-grid">
+ <footer class="foot"><strong id="advisor">Votre Conseiller ORPI</strong> · <a id="phoneLink" href="tel:0600000000">06 00 00 00 00</a> · <a id="emailLink" href="mailto:contact@votre-agence-orpi.com">contact@votre-agence-orpi.com</a><div id="agencyAddress"></div></footer>
+ <section class="admin hidden" id="adminPanel">
+  <h2>Personnalisation & espace de test</h2><p class="tiny">Les modifications sont enregistrées dans ce navigateur. Le mode test ne transmet aucune donnée à un service externe.</p>
+  <div class="toolbar"><button class="btn secondary small" id="testMode">Mode test local : activé</button><button class="btn secondary small" id="saveConfig">Enregistrer les réglages</button><button class="btn secondary small" id="resetConfig">Réglages d'origine</button><button class="btn small" id="downloadSite">Télécharger la page personnalisée</button></div>
+  <details open><summary>Contenu de la page</summary><div class="admin-grid" id="configFields"></div></details>
+  <details open><summary>Connexion et automatisations</summary><div class="admin-grid">
    <div class="field wide"><label for="endpoint">URL Google Apps Script (déploiement Web App)</label><input id="endpoint" placeholder="https://script.google.com/macros/s/.../exec"></div>
    <div class="field wide"><label for="agencyEmail">E-mail de réception des prospects (configuré aussi dans Apps Script)</label><input id="agencyEmail" type="email" placeholder="agence@exemple.fr"></div>
   </div><p class="tiny">En mode réel, les demandes sont envoyées au script. Les e-mails de confirmation et rappels nécessitent de déployer le fichier Code.gs fourni. Aucun SMS n'est envoyé.</p></details>
-  <details open=""><summary>Demandes enregistrées sur cet appareil</summary>
-   <div class="stats"><div class="stat"><b id="leadCount">1</b><span class="tiny">Demandes</span></div><div class="stat"><b id="rdvCount">0</b><span class="tiny">Rendez-vous</span></div></div>
+  <details open><summary>Demandes enregistrées sur cet appareil</summary>
+   <div class="stats"><div class="stat"><b id="leadCount">0</b><span class="tiny">Demandes</span></div><div class="stat"><b id="rdvCount">0</b><span class="tiny">Rendez-vous</span></div></div>
    <div class="toolbar"><button class="btn small" id="exportCsv">Exporter CSV</button><button class="btn secondary small" id="clearLeads">Effacer les tests locaux</button></div>
-   <div class="tablewrap"><table><thead><tr><th>Date</th><th>Nom</th><th>Téléphone</th><th>E-mail</th><th>Type</th><th>RDV</th></tr></thead><tbody id="leadRows"><tr><td>2026-11-02T16:34:08.886Z</td><td>bajard</td><td>0684107146</td><td>aurelien.bajard@orpi.com</td><td>rappel</td><td>—</td></tr></tbody></table></div>
+   <div class="tablewrap"><table><thead><tr><th>Date</th><th>Nom</th><th>Téléphone</th><th>E-mail</th><th>Type</th><th>RDV</th></tr></thead><tbody id="leadRows"></tbody></table></div>
   </details>
-  <details><summary>Vérification technique</summary><div id="diagnostics" class="tiny">✅ Formulaire présent<br>✅ Validation e-mail native<br>✅ Consentement obligatoire<br>⚠️ Mode test sans envoi externe — à vérifier<br>✅ URL endpoint configurée<br>✅ Couleur valide<br>✅ Jours ouvrés générés</div><div class="toolbar"><button class="btn secondary small" id="runChecks">Relancer les vérifications</button><button class="btn secondary small" id="testEndpoint">Tester la connexion</button></div><div id="connectionResult" class="status"></div></details>
+  <details><summary>Vérification technique</summary><div id="diagnostics" class="tiny"></div><div class="toolbar"><button class="btn secondary small" id="runChecks">Relancer les vérifications</button><button class="btn secondary small" id="testEndpoint">Tester la connexion</button></div><div id="connectionResult" class="status"></div></details>
  </section>
 </div>
 <script>
@@ -87,13 +80,20 @@ const brandName=$('brandName'), badge=$('badge'), sector=$('sector'), headline=$
  day=$('day'), slot=$('slot'), place=$('place'), address=$('address'),
  addressWrap=$('addressWrap'), consent=$('consent'), adminPanel=$('adminPanel'),
  testModeButton=$('testMode');
-const DEFAULTS=/*CONFIG_DEFAULTS*/{"project":"Location Accession à Castries","primary":"#D6001C","badge":"A NE PAS MANQUER !","sector":"Castries Parc du Château","title":"Une opportunité OCI à ne pas manquer","rent":"850","rentLabel":"Loyer mensuel","photo":"https://v.seloger.com/s/width/860/visuels/1/e/p/a/1epaqq6ndb9k32rgeca8gl6x9cgqkg6y9xs0miiso.jpg","description":"L'expertise OCI à votre disposition :\n\nNe manquez pas l'opportunité de transformer vos loyers en résidence principale. \n\nPTZ 2026 (Zone B1) - Prêt 1% - financement personnalisé .\n\nAppartement T2 avec terrasse et jardin privatif à partir de 172.000€ (stationnement inclus)\n\n                                            Rencontrons nous pour échanger sur votre projet et valider votre éligibilité !","advisor":"Aurélien Bajard","phone":"06-84-10-71-46","email":"aurelien.bajard@orpi.com","agencyAddress":"avenue du General de Gaulle 34400 Lunel"};
-const DEFAULT_ENDPOINT="https://script.google.com/a/macros/orpi.com/s/AKfycbywSLCIBIJgW8apolDLi5Od9udfk-PbZJm1TWtwugMGKxIMWpuy-GgTV6PXQv5m9QNc/exec";
-const DEFAULT_AGENCY_EMAIL="aurelien.bajard@orpi.com";
-const DEFAULT_TEST_MODE=false;
+const DEFAULTS=/*CONFIG_DEFAULTS*/{
+ project:'Opportunité OCI Castries',primary:'#D6001C',badge:'Exclusivité Avant-Première',sector:'Castries',
+ title:'Une opportunité OCI à ne pas manquer',rent:'840',rentLabel:'Loyer d’appel mensuel',
+ photo:'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
+ description:'Découvrez en avant-première cette opportunité immobilière exclusive située dans un secteur particulièrement recherché. Proche de toutes les commodités, des axes majeurs et des espaces de vie, ce bien offre des volumes optimisés et des prestations modernes.',
+ advisor:'Votre Conseiller ORPI',phone:'06 00 00 00 00',email:'contact@votre-agence-orpi.com',
+ agencyAddress:"10 Rue de l'Orpi, 34160 Castries"
+};
+const DEFAULT_ENDPOINT='https://script.google.com/a/macros/orpi.com/s/AKfycbywSLCIBIJgW8apolDLi5Od9udfk-PbZJm1TWtwugMGKxIMWpuy-GgTV6PXQv5m9QNc/exec';
+const DEFAULT_AGENCY_EMAIL='aurelien.bajard@orpi.com';
+const DEFAULT_TEST_MODE=true;
 const CONFIG_KEYS={project:'Nom du projet',primary:'Couleur principale (#hex)',badge:'Badge',sector:'Secteur géographique',title:'Titre principal',rent:'Loyer (nombre)',rentLabel:'Libellé du loyer',photo:'URL photo',description:'Description',advisor:'Nom conseiller / agence',phone:'Téléphone',email:'E-mail',agencyAddress:'Adresse agence'};
 const SLOTS=['10:00–11:30','11:00–12:30','14:00–15:30','15:30–17:00','16:00–17:30'];
-let config=load('oci_config',DEFAULTS), leads=load('oci_leads',[]), mode='rappel', testMode=load('oci_test_mode',DEFAULT_TEST_MODE);
+let config=load('oci_config',DEFAULTS), leads=load('oci_leads',[]), mode='rappel', testMode=false;
 function load(k,f){try{return JSON.parse(localStorage.getItem(k))??structuredClone(f)}catch{return structuredClone(f)}}
 function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
 function applyConfig(){document.documentElement.style.setProperty('--primary',/^#[0-9a-f]{6}$/i.test(config.primary)?config.primary:DEFAULTS.primary);
